@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --white: #ffffff;
+    --primary: #851DE0;
+    --secondary: #E14D2A;
+
+    --cubic1 : cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: "estedad";
+    src: url("./fonts/estedad.woff2") format("woff2-variations");
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+    font-style: normal;
+}
+
+.App {
+  overflow-x: hidden;
+}
