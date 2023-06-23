@@ -4,8 +4,9 @@
 
 :root {
     --white: #ffffff;
-    --primary: #851DE0;
-    --secondary: #E14D2A;
+    --primary: #6200BF;
+    --secondary: #FF00F8;
+    --dark: #0B0422;
 
     --cubic1 : cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

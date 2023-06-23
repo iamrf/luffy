@@ -1,8 +1,8 @@
-import OnionPattern from "./OnionPattern";
+import OnionPattern from "../assets/OnionPattern";
 
 const HomeHero = () => {
     return ( 
-        <section className="relative h-screen w-full flex items-center select-none">
+        <section className="relative h-screen w-full flex items-center font-primary select-none">
             <OnionPattern className="absolute right-0 top-0" />
             <div className="container mx-auto">
                 <div className="h-full w-full flex flex-col md:flex-row justify-around md:justify-between items-around md:items-center">
@@ -29,7 +29,7 @@ const HomeHero = () => {
                     </div>
 
                     <div className="relative w-full md:w-1/2 font-thin leading-loose select-none">
-                        <img src="./images/hero.png" alt="hero" />
+                        <img className="w-auto h-auto" src="./images/hero.png" alt="hero" />
                     </div>
                 </div>
             </div>

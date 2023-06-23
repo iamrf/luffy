@@ -20,6 +20,8 @@ module.exports = {
         'primary': '#6200BF',
         'secondary': '#FF00F8',
         'dark': '#0B0422',
+        'bgrt': '#17112D',
+        'bgrb': '#211B35',
       },
       fontSize: {
         '4xl': '4rem',

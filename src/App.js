@@ -1,11 +1,13 @@
-import HomeHero from "./components/Hero";
+import HomeHero from "./components/home/Hero";
+import HomeIntro from "./components/home/Intro";
 
 function App() {
   return (
-    <div className="App font-primary bg-dark text-white">
+    <div className="App bg-dark text-white">
         <header className="App-header">
             <HomeHero />
         </header>
+        <HomeIntro />
     </div>
   );
 }
