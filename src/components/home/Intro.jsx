@@ -42,7 +42,7 @@ const HomeIntro = () => {
     return ( 
         <section className="mt-16 select-none">
             <div className="container mx-auto font-primary text-center">
-                <h3 className="text-center font-regular text-3xl">
+                <h3 className="text-center font-regular text-2xl">
                     چرا لوفی را انتخاب کنیم؟
                 </h3>
                 <div className="mt-16 px-4 md:px-0 grid grid-cols-1 md:grid-cols-4 gap-8">

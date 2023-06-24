@@ -1,3 +1,4 @@
+import FreeAnounce from "./components/home/FreeAnounce";
 import HomeHero from "./components/home/Hero";
 import HomeIntro from "./components/home/Intro";
 
@@ -8,6 +9,7 @@ function App() {
             <HomeHero />
         </header>
         <HomeIntro />
+        <FreeAnounce />
     </div>
   );
 }

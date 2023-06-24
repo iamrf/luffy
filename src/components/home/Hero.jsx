@@ -2,7 +2,7 @@ import OnionPattern from "../assets/OnionPattern";
 
 const HomeHero = () => {
     return ( 
-        <section className="relative h-screen w-full flex items-center font-primary select-none">
+        <section className="relative min-h-screen w-full flex items-center font-primary select-none">
             <OnionPattern className="absolute right-0 top-0" />
             <div className="container mx-auto">
                 <div className="h-full w-full flex flex-col md:flex-row justify-around md:justify-between items-around md:items-center">
@@ -12,7 +12,7 @@ const HomeHero = () => {
                         <h2 className="text-xl opacity-60">
                         امن ترین سرویس تغییر آی پی
                         </h2>
-                        <h1 className="mt-8 mb-16 font-bold text-3xl">
+                        <h1 className="mt-4 mb-8 font-bold text-2xl">
                         سرویس کاهش پینگ لوفی
                         </h1>
                         <div>
@@ -22,7 +22,7 @@ const HomeHero = () => {
                             <p className="opacity-60">
                         با پیوستن به گروه لوفی محدودیت های اتصال به دنیای آزاد برطرف خواهد شد
                             </p>
-                            <button className="mt-8 px-6 py-3 bg-gradient-to-l from-primary to-secondary rounded-lg">
+                            <button className="mt-8 px-6 py-3 bg-gradient-to-l from-primary to-secondary rounded-lg font-thin">
                                 به لوفی ملحق شوید
                             </button>
                         </div>
