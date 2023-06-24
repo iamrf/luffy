@@ -25,7 +25,7 @@ const FreeAnounce = () => {
                             </span>
                              از ما هدیه بگیرید.
                         </p>
-                        <button className="mt-8 px-6 py-3 bg-gradient-to-l from-primary to-secondary rounded-lg font-thin">
+                        <button className="mt-8 px-6 py-3 bg-gradient-to-l from-primary to-secondary hover:scale-105 rounded-lg font-thin transition-all">
                             ورود به محیط کاربری
                         </button>
                     </div>

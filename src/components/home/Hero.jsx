@@ -9,20 +9,20 @@ const HomeHero = () => {
                     <div className="relative w-full md:w-1/2 px-4 md:px-0 font-thin leading-loose">
                         <span className="absolute -right-12 -top-12 h-full w-60 bg-secondary rounded-full blur-3xl opacity-5"></span>
 
-                        <h2 className="text-xl opacity-60">
+                        <h2 className="text-sm md:text-xl opacity-60 text-center md:text-right">
                         امن ترین سرویس تغییر آی پی
                         </h2>
-                        <h1 className="mt-4 mb-8 font-bold text-2xl">
+                        <h1 className="mt-8 mb-8 font-bold text-xl md:text-2xl text-center md:text-right">
                         سرویس کاهش پینگ لوفی
                         </h1>
-                        <div>
+                        <div className="flex flex-col items-center md:items-start">
                             <p className="opacity-60">
                         لوفی تمام تلاشش را میکند تا تریدر ها, برنامه نویسان, طراحان, گیمر ها و ...از سرعت و کیفیت بدون محدودیت های ایجاد شده استفاده کنند.
                             </p>
                             <p className="opacity-60">
-                        با پیوستن به گروه لوفی محدودیت های اتصال به دنیای آزاد برطرف خواهد شد
+                        با پیوستن به گروه لوفی محدودیت های اتصال به دنیای آزاد برطرف خواهد شد.
                             </p>
-                            <button className="mt-8 px-6 py-3 bg-gradient-to-l from-primary to-secondary rounded-lg font-thin">
+                            <button className="mt-8 px-6 py-3 bg-gradient-to-l from-primary to-secondary hover:scale-105 rounded-lg font-thin transition-all">
                                 به لوفی ملحق شوید
                             </button>
                         </div>
