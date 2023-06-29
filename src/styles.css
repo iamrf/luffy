@@ -8,7 +8,7 @@
     --secondary: #FF00F8;
     --dark: #0B0422;
 
-    --cubic1 : cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --cubic1 : cubic-bezier(.44,-0.5,.41,1.5);
 }
 
 a {
@@ -26,3 +26,81 @@ a {
 .App {
   overflow-x: hidden;
 }
+
+.myAnimation1 {
+  transition: all .5s var(--cubic1);
+}
+
+.introItem > .introItemLamp {
+  background-color: var(--primary);
+  right: 35%;
+  left: 35%;
+}
+
+.introItem:hover > .introItemLamp {
+  background-color: var(--secondary);
+  box-shadow: var(--secondary) 0 0 4rem;
+  right: 20%;
+  left: 20%;
+}
+
+.introItem > div > .material-icons {
+  color: var(--primary);
+}
+
+.introItem:hover > div > .material-icons {
+  color: var(--secondary);
+}
+
+.introItem > div > h4 {
+  color: var(--white);
+}
+
+.introItem:hover > div > h4 {
+  color: var(--secondary);
+  text-shadow: #FF00F8 0rem 0rem 2rem;
+}
+
+.bgGradient1 {
+  background: linear-gradient(-45deg, #404258, #474E68, #50577A, #6B728E);
+	background-size: 400% 400%;
+	animation: gradient1 15s ease infinite;
+}
+
+.bgGradient2 {
+  background: linear-gradient(-45deg, #18122B, #393053, #443C68, #635985);
+	background-size: 400% 400%;
+	animation: gradient2 15s ease infinite;
+}
+
+.bgGradient3 {
+  background: linear-gradient(-45deg, #FC5404, #F98404, #F9B208, #F7FD04);
+	background-size: 400% 400%;
+	animation: gradient1 15s ease infinite;
+}
+
+@keyframes gradient1 {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes gradient2 {
+	0% {
+		background-position: 100% 50%;
+	}
+	50% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+

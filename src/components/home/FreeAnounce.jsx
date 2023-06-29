@@ -4,7 +4,6 @@ const FreeAnounce = () => {
     return ( 
         <section className="relative mt-40 font-primary">
             {/* <OnionPattern className="absolute left-0 top-0 rotate-180" /> */}
-
             <div className="container mx-auto">
                 <div className="w-full flex flex-col md:flex-row justify-between items-center">
                     <div className="w-full md:w-1/2 flex justify-around">

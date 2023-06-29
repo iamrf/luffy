@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { BsCheckSquare } from 'react-icons/bs';
 
 const monthlyPlans = [
@@ -5,6 +6,7 @@ const monthlyPlans = [
         id:1,
         title: 'پلن برنزی',
         description: 'برای کاربران با مصرف معمولی و به صرفه',
+        type: 'ماهیانه',
         items: [
             '۱۰۰ گیگابایت',
             '۴ سرور پر سرعت',
@@ -17,6 +19,7 @@ const monthlyPlans = [
         id:2,
         title: 'پلن نقره ای',
         description: 'برای کاربران با مصرف معمولی و به صرفه',
+        type: 'ماهیانه',
         items: [
             '۱۰۰ گیگابایت',
             '۴ سرور پر سرعت',
@@ -29,6 +32,7 @@ const monthlyPlans = [
         id:3,
         title: 'پلن طلایی',
         description: 'برای کاربران با مصرف معمولی و به صرفه',
+        type: 'ماهیانه',
         items: [
             '۱۰۰ گیگابایت',
             '۴ سرور پر سرعت',
@@ -39,13 +43,55 @@ const monthlyPlans = [
     },
 ]
 
+const quarterPlans = [
+    {
+        id:1,
+        title: 'پلن برنزی',
+        description: 'برای کاربران با مصرف معمولی و به صرفه',
+        type: '۳ ماهه',
+        items: [
+            '۳۰۰ گیگابایت',
+            '۵ سرور پر سرعت',
+            '۹ کاربره',
+        ],
+        price: '۸۰۰.۰۰۰',
+        image: './images/intro/global.svg'
+    },
+    {
+        id:2,
+        title: 'پلن نقره ای',
+        description: 'برای کاربران با مصرف معمولی و به صرفه',
+        type: '۳ ماهه',
+        items: [
+            '۴۵۰ گیگابایت',
+            '۹ سرور پر سرعت',
+            '۱ کاربره',
+        ],
+        price: '۱.۰۰۰.۰۰۰',
+        image: './images/intro/global.svg'
+    },
+    {
+        id:3,
+        title: 'پلن طلایی',
+        description: 'برای کاربران با مصرف معمولی و به صرفه',
+        type: '۳ ماهه',
+        items: [
+            '۹۹۹ گیگابایت',
+            '۲ سرور پر سرعت',
+            'بدون محدودیت کاربر',
+        ],
+        price: '۱.۲۰۰.۰۰۰',
+        image: './images/intro/global.svg'
+    },
+]
+
 const HomePlansItem = (props) => {
     return (
-        <div className="p-4 md:p-8 flex flex-col items-center bg-primary rounded-2xl">
+        <div className={`bgGradient${props.plan.id} p-4 md:p-8 flex flex-col items-center rounded-2xl transition-all`}>
             <h4 className="text-center text-xl font-semibold">{props.plan.title}</h4>
             <h6 className="mt-6 text-center text-md font-thin">{props.plan.description}</h6>
             {props.plan.items.map(item=>
-                <div className="w-full mt-8 flex justify-between items-center text-lg">
+                <div key={item.id} className="w-full mt-8 flex justify-between items-center text-lg">
                     <span>
                         {item}
                     </span>
@@ -66,20 +112,22 @@ const HomePlansItem = (props) => {
 
 
 const HomePlans = () => {
+    const [activeTab, setActiveTab] = useState(monthlyPlans)
+
     return ( 
         <section id="plans" className="relative min-h-20 mt-40 font-primary">
             <div className="container mx-auto px-4 md:px-0 ">
                 <div className="flex justify-between items-center">
                     <h3 className="font-bold text-2xl">پلن ها</h3>
-                    <div>
-                        asdsad
+                    <div className='relative p-2 grid grid-cols-2 gap-4 border-2 border-bgrt rounded-md shadow-2xl shadow-bgrt'>
+                            <button onClick={()=>setActiveTab(monthlyPlans)} className={`plansBtn px-8 py-2 ${activeTab===monthlyPlans && "bg-white text-dark"} rounded-md transition-all border-opacity-30`}>۱ ماهه</button>
+                            <button onClick={()=>setActiveTab(quarterPlans)} className={`plansBtn px-8 py-2 ${activeTab!==monthlyPlans && "bg-white text-dark"} rounded-md transition-all border-opacity-30`}>۳ ماهه</button>
                     </div>
                 </div>
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {monthlyPlans.map(plan=>
-                        <HomePlansItem key={plan.id} plan={plan} planType='ماهیانه' />
+                    {activeTab.map(plan=>
+                        <HomePlansItem key={plan.id} plan={plan} planType={plan.type} />
                     )}
-
                 </div>
             </div>
         </section>
