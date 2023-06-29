@@ -7,6 +7,7 @@
     --primary: #6200BF;
     --secondary: #FF00F8;
     --dark: #0B0422;
+    --blue: #0FA2DB;
 
     --cubic1 : cubic-bezier(.44,-0.5,.41,1.5);
 }
@@ -61,22 +62,26 @@ a {
   text-shadow: #FF00F8 0rem 0rem 2rem;
 }
 
-.bgGradient1 {
+
+.home_plans_item {
+	background-size: 400% 400%;
+	animation: gradient1 15s ease infinite;
+}
+
+.home_plans_item:nth-child(1) {
   background: linear-gradient(-45deg, #404258, #474E68, #50577A, #6B728E);
-	background-size: 400% 400%;
-	animation: gradient1 15s ease infinite;
 }
 
-.bgGradient2 {
+.home_plans_item:nth-child(2) {
   background: linear-gradient(-45deg, #18122B, #393053, #443C68, #635985);
-	background-size: 400% 400%;
-	animation: gradient2 15s ease infinite;
 }
 
-.bgGradient3 {
+.home_plans_item:nth-child(3) {
   background: linear-gradient(-45deg, #FC5404, #F98404, #F9B208, #F7FD04);
-	background-size: 400% 400%;
-	animation: gradient1 15s ease infinite;
+}
+
+.home_plans_item:nth-child(4) {
+  background: linear-gradient(-45deg, #18122B, #393053, #443C68, #635985);
 }
 
 @keyframes gradient1 {
@@ -104,3 +109,22 @@ a {
 	}
 }
 
+.onion_animation {
+	animation: onionAnimation 30s linear 0s infinite alternate;
+}
+
+@keyframes onionAnimation {
+  0% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(4)
+  }
+}
+
+
+.footer {
+  background: linear-gradient(-45deg, #1B1B2F, #1F4068, #162447);
+	background-size: 400% 400%;
+	animation: gradient1 15s ease infinite alternate;
+}

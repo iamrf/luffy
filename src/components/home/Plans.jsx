@@ -41,6 +41,19 @@ const monthlyPlans = [
         price: '۵۰۰.۰۰۰',
         image: './images/intro/global.svg'
     },
+    {
+        id:4,
+        title: 'پلن طلایی',
+        description: 'برای کاربران با مصرف معمولی و به صرفه',
+        type: 'ماهیانه',
+        items: [
+            '۱۰۰ گیگابایت',
+            '۴ سرور پر سرعت',
+            'بدون محدودیت کاربر',
+        ],
+        price: '۵۰۰.۰۰۰',
+        image: './images/intro/global.svg'
+    },
 ]
 
 const quarterPlans = [
@@ -87,7 +100,7 @@ const quarterPlans = [
 
 const HomePlansItem = (props) => {
     return (
-        <div className={`bgGradient${props.plan.id} p-4 md:p-8 flex flex-col items-center rounded-2xl transition-all`}>
+        <div className={`home_plans_item p-4 md:p-8 flex flex-col items-center rounded-2xl transition-all`}>
             <h4 className="text-center text-xl font-semibold">{props.plan.title}</h4>
             <h6 className="mt-6 text-center text-md font-thin">{props.plan.description}</h6>
             {props.plan.items.map(item=>
@@ -117,14 +130,14 @@ const HomePlans = () => {
     return ( 
         <section id="plans" className="relative min-h-20 mt-40 font-primary">
             <div className="container mx-auto px-4 md:px-0 ">
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col md:flex-row justify-between items-center">
                     <h3 className="font-bold text-2xl">پلن ها</h3>
-                    <div className='relative p-2 grid grid-cols-2 gap-4 border-2 border-bgrt rounded-md shadow-2xl shadow-bgrt'>
+                    <div className='relative w-full md:w-auto mt-8 md:mt-0 p-2 grid grid-cols-2 gap-4 border-2 border-bgrt rounded-md shadow-2xl shadow-bgrt'>
                             <button onClick={()=>setActiveTab(monthlyPlans)} className={`plansBtn px-8 py-2 ${activeTab===monthlyPlans && "bg-white text-dark"} rounded-md transition-all border-opacity-30`}>۱ ماهه</button>
                             <button onClick={()=>setActiveTab(quarterPlans)} className={`plansBtn px-8 py-2 ${activeTab!==monthlyPlans && "bg-white text-dark"} rounded-md transition-all border-opacity-30`}>۳ ماهه</button>
                     </div>
                 </div>
-                <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className={`mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-${activeTab.length} gap-8`}>
                     {activeTab.map(plan=>
                         <HomePlansItem key={plan.id} plan={plan} planType={plan.type} />
                     )}
