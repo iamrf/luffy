@@ -30,6 +30,38 @@ const Footer = () => {
                     </div>
                     
                 </div>
+                <hr className="my-8 opacity-30"/>
+                <div className="footer_copyright w-full flex flex-col md:flex-row justify-between">
+                    <div className="flex flex-col md:flex-row md:items-center">
+                        <div className="flex items-center ml-8">
+                            <span class="material-icons ml-2">
+                            dns
+                            </span>
+                            <span>
+                                +۱۵ سرور
+                            </span>
+                        </div>
+                        <div className="flex items-center ml-8 mt-4 md:mt-0">
+                            <span class="material-icons ml-2">
+                            fmd_good
+                            </span>
+                            <span>
+                                +۱۰ لوکیشن
+                            </span>
+                        </div>
+                        <div className="flex items-center mt-4 md:mt-0">
+                            <span class="material-icons ml-2">
+                            person_outline
+                            </span>
+                            <span>
+                                +۱۰۰۰ کاربر
+                            </span>
+                        </div>
+                    </div>
+                    <p className="text-sm mt-8 md:mt-0">
+                    کلیه حقوق مادی و معنوی این سایت محفوظ و هرگونه کپی برداری از آن پیگرد قانونی دارد.
+                    </p>
+                </div>
             </div>
         </section>
      );
