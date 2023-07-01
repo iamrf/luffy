@@ -1,4 +1,5 @@
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import OnionPattern from "./components/assets/OnionPattern";
 import FreeAnounce from "./components/home/FreeAnounce";
 import HomeHero from "./components/home/Hero";
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className="App relative bg-dark text-white">
         <OnionPattern className="onion_animation absolute right-0 top-0 object-right-top origin-top-right" />
+        <Navbar />
         <header className="App-header">
             <HomeHero />
         </header>

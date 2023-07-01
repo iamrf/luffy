@@ -9,6 +9,8 @@
     --dark: #0B0422;
     --footer: #1E1834;
     --blue: #0FA2DB;
+    --bgrt: #17112D;
+    --bgrb: #211B35;
 
     --cubic1 : cubic-bezier(.44,-0.5,.41,1.5);
 }
@@ -121,6 +123,28 @@ a {
   100% {
     transform: scale(4)
   }
+}
+
+.navlink {
+  position: relative;
+}
+
+.navlink::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 100%;
+  background: linear-gradient(-90deg, var(--primary), var(--secondary));
+  height: .3rem;
+  border-radius: .5rem;
+  transition: all .5s var(--cubic1);
+  opacity: 0;
+}
+
+.navlink:hover::before {
+  opacity: 1;
+  left: 0%;
 }
 
 
