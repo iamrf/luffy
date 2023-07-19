@@ -41,19 +41,6 @@ const monthlyPlans = [
         price: '۵۰۰.۰۰۰',
         image: './images/intro/global.svg'
     },
-    {
-        id:4,
-        title: 'پلن طلایی',
-        description: 'برای کاربران با مصرف معمولی و به صرفه',
-        type: 'ماهیانه',
-        items: [
-            '۱۰۰ گیگابایت',
-            '۴ سرور پر سرعت',
-            'بدون محدودیت کاربر',
-        ],
-        price: '۵۰۰.۰۰۰',
-        image: './images/intro/global.svg'
-    },
 ]
 
 const quarterPlans = [
@@ -113,7 +100,7 @@ const HomePlansItem = (props) => {
                     </span>
                 </div>
             )}
-            <button className="w-full mt-8 px-6 py-3 border bg-transparent hover:bg-gradient-to-l hover:from-secondary hover:to-primary border-secondary rounded-lg text-secondary hover:text-white font-regular transition-all">
+            <button className="w-full mt-8 px-6 py-3 border bg-transparent hover:bg-gradient-to-l hover:from-secondary hover:to-primary border-secondary rounded-lg text-secondary hover:text-white font-regular transition-all duration-300">
                 <span className="font-bold ml-2">
                 {props.plan.price}
                 </span>
@@ -137,7 +124,7 @@ const HomePlans = () => {
                             <button onClick={()=>setActiveTab(quarterPlans)} className={`plansBtn px-8 py-2 ${activeTab!==monthlyPlans && "bg-white text-dark"} rounded-md transition-all border-opacity-30`}>۳ ماهه</button>
                     </div>
                 </div>
-                <div className={`mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-${activeTab.length} gap-8`}>
+                <div className={`mt-8 md:mt-16 grid grid-cols-1 md:grid-cols-3 gap-8`}>
                     {activeTab.map(plan=>
                         <HomePlansItem key={plan.id} plan={plan} planType={plan.type} />
                     )}

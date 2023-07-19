@@ -1,6 +1,6 @@
 const Footer = () => {
     return ( 
-        <section className="footer w-full font-primary font-light bg-opacity-100">
+        <section id="footer" className="footer w-full font-primary font-light bg-opacity-100">
             <div className="px-4 md:px-0 py-12 container mx-auto flex flex-col">
                 <img className="w-full md:w-40" src="./images/luffy_logo.svg" alt="لوگو" />
                 <div className="footer_info mt-8 flex flex-col md:flex-row text-md">

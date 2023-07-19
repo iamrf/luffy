@@ -5,7 +5,7 @@ const data = [
     {
         id:1,
         title: 'ریجن های مختلف',
-        content: 'سرورها از کشورهای آلمان, هلند, انگلیس, استرالیا و ...',
+        content: 'سرورهای اختصاصی و آی پی ثابت از کشورهای آلمان, هلند, انگلیس, فرانسه، آمریکا و ...',
         icon:'public',
         image: './images/intro/global.svg'
     },
@@ -49,7 +49,7 @@ const HomeIntroItem = (props) => {
 
 const HomeIntro = () => {
     return ( 
-        <section className="mt-16 select-none">
+        <section id="whyluffy" className="mt-16 select-none">
             <div className="container mx-auto font-primary text-center">
                 <h3 className="text-center font-regular text-2xl">
                     چرا لوفی را انتخاب کنیم؟

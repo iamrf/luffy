@@ -15,6 +15,10 @@
     --cubic1 : cubic-bezier(.44,-0.5,.41,1.5);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -67,25 +71,12 @@ a {
 
 
 .home_plans_item {
-	background-size: 400% 400%;
-	animation: gradient1 15s ease infinite;
+	/* background-size: 400% 400%;
+	animation: gradient1 15s ease infinite; */
+  background-image: url('../public/images/plan_pattern.png');
+  background-size: cover;
 }
 
-.home_plans_item:nth-child(1) {
-  background: linear-gradient(-45deg, #404258, #474E68, #50577A, #6B728E);
-}
-
-.home_plans_item:nth-child(2) {
-  background: linear-gradient(-45deg, #18122B, #393053, #443C68, #635985);
-}
-
-.home_plans_item:nth-child(3) {
-  background: linear-gradient(-45deg, #FC5404, #F98404, #F9B208, #F7FD04);
-}
-
-.home_plans_item:nth-child(4) {
-  background: linear-gradient(-45deg, #18122B, #393053, #443C68, #635985);
-}
 
 @keyframes gradient1 {
 	0% {

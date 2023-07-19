@@ -7,8 +7,8 @@ const FreeAnounce = () => {
             <div className="container mx-auto">
                 <div className="w-full flex flex-col md:flex-row justify-between items-center">
                     <div className="w-full md:w-1/2 flex justify-around">
-                        <img className="w-1/2 m-2 md:ml-8 md:mb-16" src="./images/5g.png" alt="5G" />
-                        <img className="w-1/2 m-2 md:mr-8 md:mt-16" src="./images/user_laptop1.png" alt="user friendly" />
+                        <img className="w-1/2 m-2 hidden md:flex md:ml-8 md:mb-32" src="./images/frame869.svg" alt="5G" />
+                        <img className="w-1/2 md:m-2 md:mr-8 md:mt-32" src="./images/guard_shape2.svg" alt="user friendly" />
                     </div>
                     <div className="w-full md:w-1/2 mt-16 md:mt-0 px-4 md:px-16 flex flex-col items-center md:items-start">
                         <h4 className="mb-8 text-2xl font-thin">
