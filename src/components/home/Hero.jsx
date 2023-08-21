@@ -27,12 +27,12 @@ const HomeHero = () => {
                                 <p className="ml-4 opacity-90 leading-10 text-lg font-semibold">
                                     با ۲ گیگابایت حجم
                                 </p>
-                                <button className="px-4 py-2 bg-gradient-to-l from-primary to-secondary hover:scale-105 rounded-lg font-regular text-xl transition-all">
+                                <a href="https://luffyvpn.online/" className="px-4 py-2 bg-gradient-to-l from-primary to-secondary hover:scale-105 rounded-lg font-regular text-xl transition-all">
                                     <span className="font-semibold ml-1">
                                     رایگان
                                     </span>
                                      شروع کن !
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>

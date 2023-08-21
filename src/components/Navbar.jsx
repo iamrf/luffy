@@ -14,18 +14,18 @@ const Navbar = () => {
                             پلن ها
                         </span>
                     </a>
-                    <a href="#tutorial" className="px-4 opacity-60 hover:opacity-100 transition-all">
+                    {/* <a href="#tutorial" className="px-4 opacity-60 hover:opacity-100 transition-all">
                         <span className="navlink py-4">
                             آموزش
                         </span>
-                    </a>
+                    </a> */}
                     <a href="#footer" className="px-4 opacity-60 hover:opacity-100 transition-all">
                         <span className="navlink py-4">
                             تماس با ما
                         </span>
                     </a>
                 </ul>
-                <a href="https://luffyvpn.tk/#/login" className="mr-auto flex items-center font-thin text-md md:text-lg md:opacity-50 hover:opacity-100 transition-all">
+                <a href="https://luffyvpn.online" className="mr-auto flex items-center font-thin text-md md:text-lg md:opacity-50 hover:opacity-100 transition-all">
                     <span class="material-icons text-md md:text-2xl">
                     person_outline
                     </span>

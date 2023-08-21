@@ -100,12 +100,12 @@ const HomePlansItem = (props) => {
                     </span>
                 </div>
             )}
-            <button className="w-full mt-8 px-6 py-3 border bg-transparent hover:bg-gradient-to-l hover:from-secondary hover:to-primary border-secondary rounded-lg text-secondary hover:text-white font-regular transition-all duration-300">
+            <a href="https://luffyvpn.online/" className="w-full mt-8 px-6 py-3 text-center border bg-transparent hover:bg-gradient-to-l hover:from-secondary hover:to-primary border-secondary rounded-lg text-secondary hover:text-white font-regular transition-all duration-300">
                 <span className="font-bold ml-2">
                 {props.plan.price}
                 </span>
                     تومان | {props.planType}
-            </button>
+            </a>
         </div>
     )
 }

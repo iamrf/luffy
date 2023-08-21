@@ -19,7 +19,7 @@ function App() {
         <HomeIntro />
         <FreeAnounce />
         <HomePlans />
-        <HomeTutorial />
+        {/* <HomeTutorial /> */}
         <TelegramBanner />
 
         <Footer />

@@ -16,7 +16,7 @@ const TelegramBanner = () => {
                             <p className="text-center md:text-right font-light text-blue">
                             از بروز رسانی سرورها و اخبار فیلترینگ مطلع شوید
                             </p>
-                            <a href="/telegram" className="mt-8 md:mt-0 md:mr-8 flex items-center text-white bg-blue py-2 px-8 rounded-md hover:scale-110 myAnimation1">
+                            <a href="https://t.me/luffy_vpn" className="mt-8 md:mt-0 md:mr-8 flex items-center text-white bg-blue py-2 px-8 rounded-md hover:scale-110 myAnimation1">
                                 <span class="material-icons">
                                 diversity_3
                                 </span>
