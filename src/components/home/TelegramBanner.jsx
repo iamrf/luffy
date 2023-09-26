@@ -1,7 +1,7 @@
 const TelegramBanner = () => {
     return ( 
         <section className="banner font-primary my-48 select-none">
-            <div className="px-4 md:px-0 container mx-auto">
+            <div className="px-4 container mx-auto">
                 <div className="relative w-full h-auto px-8 py-12 bg-white rounded-md">
                     <img className="relative md:absolute -top-2/4 md:top-auto md:-bottom-1/4 md:left-0 auto w-auto md:w-4/12" src="./images/telegram.png" alt="asdasd" />
                     <div>

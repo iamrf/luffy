@@ -1,7 +1,7 @@
 const HomeHero = () => {
     return ( 
         <section className="relative min-h-screen w-full flex items-center font-primary select-none">
-            <div className="container mx-auto">
+            <div className="container mx-auto px-4">
                 <div className="h-full w-full flex flex-col md:flex-row justify-around md:justify-between items-around md:items-center">
                     <div className="relative w-full pt-28 md:pt-0 md:w-1/2 px-4 md:px-0 font-light leading-loose">
                         <span className="absolute -right-12 -top-12 h-full w-60 bg-secondary rounded-full blur-3xl opacity-5"></span>
@@ -25,7 +25,7 @@ const HomeHero = () => {
                             </p>
                             <div className="w-full mt-8 flex justify-center md:justify-start items-center">
                                 <p className="ml-4 opacity-90 leading-10 text-lg font-semibold">
-                                    با ۲ گیگابایت حجم
+                                    با ۵ گیگابایت حجم
                                 </p>
                                 <a href="https://luffyvpn.online/" className="px-4 py-2 bg-gradient-to-l from-primary to-secondary hover:scale-105 rounded-lg font-regular text-xl transition-all">
                                     <span className="font-semibold ml-1">

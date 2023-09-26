@@ -2,7 +2,7 @@ const HomeTutorial = () => {
     return ( 
         
         <section id="tutorial" className="mt-20 md:mt-32">
-            <div className="px-4 md:px-0 container mx-auto font-primary text-center">
+            <div className="px-4 container mx-auto font-primary text-center">
                 <div className="w-full flex flex-col justify-center items-center">
                     <h3 className="font-light text-2xl">آموزش اتصال</h3>
                     <p className="mt-8 font-thin">

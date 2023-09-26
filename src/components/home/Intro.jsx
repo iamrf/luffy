@@ -50,7 +50,7 @@ const HomeIntroItem = (props) => {
 const HomeIntro = () => {
     return ( 
         <section id="whyluffy" className="mt-16 select-none">
-            <div className="container mx-auto font-primary text-center">
+            <div className="container mx-auto px-4 font-primary text-center">
                 <h3 className="text-center font-regular text-2xl">
                     چرا لوفی را انتخاب کنیم؟
                 </h3>
